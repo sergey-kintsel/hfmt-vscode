@@ -1,38 +1,41 @@
 {
-  "name": "hfmt-vscode",
-  "displayName": "hfmt",
-  "version": "0.0.1",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sergey-kintsel/hfmt-vscode"
-  },
-  "description": "VS Code extension for Haskell code formatting based on hfmt tool",
-  "engines": {
-    "vscode": "^1.9.0"
-  },
-  "categories": [
-    "Formatters"
-  ],
-  "activationEvents": [
-    "onLanguage:haskell"
-  ],
-  "contributes": {
-    "languages": [{
-      "id": "haskell"
-    }]
-  },
-  "scripts": {
-    "compile": "tsc",
-    "postinstall": "node ./node_modules/vscode/bin/install && tsc"
-  },
-  "devDependencies": {
-    "@types/node": "*",
-    "vscode": "1.1.10",
-    "typescript": "2.7"
-  },
-  "main": "./out/src/extension",
-  "author": "Sergey Kintsel",
-  "publisher": "sergey-kintsel",
-  "license": "MIT",
-  "private": false
+    "name": "hfmt-vscode",
+    "displayName": "hfmt",
+    "version": "0.1.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sergey-kintsel/hfmt-vscode"
+    },
+    "icon": "images/icon.png",
+    "description": "VS Code extension for Haskell code formatting based on hfmt tool",
+    "engines": {
+        "vscode": "^1.9.0"
+    },
+    "categories": [
+        "Formatters"
+    ],
+    "activationEvents": [
+        "onLanguage:haskell"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "haskell"
+            }
+        ]
+    },
+    "scripts": {
+        "compile": "tsc",
+        "postinstall": "node ./node_modules/vscode/bin/install && tsc"
+    },
+    "devDependencies": {
+        "@types/node": "*",
+        "vscode": "1.1.10",
+        "typescript": "2.7"
+    },
+    "main": "./out/src/extension",
+    "author": "Sergey Kintsel",
+    "publisher": "sergey-kintsel",
+    "license": "MIT",
+    "private": false
 }
